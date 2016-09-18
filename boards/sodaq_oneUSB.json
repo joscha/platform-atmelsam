@@ -1,0 +1,43 @@
+{
+    "build": {
+        "hwids": [
+            [
+                "0x2341",
+                "0x804d"
+            ],
+            [
+                "0x2341",
+                "0x004d"
+            ]
+        ],
+        "cpu": "cortex-m0plus",
+        "mcu": "cortex-m0plus",
+        "f_cpu": "48000000L",
+        "usb_product": "SODAQ ONE",
+        "usb_manufacturer": "SODAQ",
+        "board": "SODAQ_ONE",
+        "core": "arduino",
+        "extra_flags": "-D__SAMD21G18A__",
+        "ldscript": "samd21g18a_bootloader_org.ld",
+        "openocdscript": "sodaq_one.cfg",
+        "variant": "sodaq_one",
+        "variant_system_lib": "",
+        "vid": "0x2341",
+        "pid": "0x804d"
+    },
+    "frameworks": [
+        "arduino"
+    ],
+    "name": "SODAQ ONE (USB Native port)",
+    "upload": {
+        "disable_flushing": true,
+        "require_upload_port": true,
+        "maximum_ram_size": 32768,
+        "protocol": "sam-ba",
+        "maximum_size": 262144,
+        "use_1200bps_touch": true,
+        "wait_for_upload_port": true
+    },
+    "url": "http://support.sodaq.com/sodaq-one/",
+    "vendor": "SODAQ"
+}

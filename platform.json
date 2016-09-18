@@ -1,9 +1,9 @@
 {
-  "name": "atmelsam",
-  "title": "Atmel SAM",
-  "description": "Atmel | SMART offers Flash- based ARM products based on the ARM Cortex-M0+, Cortex-M3 and Cortex-M4 architectures, ranging from 8KB to 2MB of Flash including a rich peripheral and feature mix.",
-  "url": "http://www.atmel.com/products/microcontrollers/arm/default.aspx",
-  "homepage": "http://platformio.org/platforms/atmelsam",
+  "name": "sodaqsamd",
+  "title": "SODAQ SAMD",
+  "description": "SODAQ SAMD (32-bits ARM Cortex-M0+) Boards",
+  "url": "https://github.com/SodaqMoja/SodaqCore-samd",
+  "homepage": "http://www.sodaq.com",
   "license": "Apache-2.0",
   "engines": {
     "platformio": "^3.0.0",
@@ -11,27 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformio/platform-atmelsam.git"
+    "url": "https://github.com/joscha/platform-sodaqsamd.git"
   },
-  "version": "1.0.3",
+  "version": "1.6.8",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "https://sourceforge.net/projects/platformio-storage/files/packages/manifest.json/download",
     "http://dl.platformio.org/packages/manifest.json",
-    "https://raw.githubusercontent.com/eerimoq/simba/master/make/platformio/manifest.json"
+    "https://raw.githubusercontent.com/joscha/platform-sodaqsamd/platformio/manifest.json"
   ],
   "frameworks": {
     "arduino": {
-      "package": "framework-arduinosam",
+      "package": "framework-sodaqsamd",
       "script": "builder/frameworks/arduino.py"
-    },
-    "mbed": {
-      "package": "framework-mbed",
-      "script": "builder/frameworks/mbed/mbed.py"
-    },
-    "simba": {
-      "package": "framework-simba",
-      "script": "builder/frameworks/simba.py"
     }
   },
   "packages": {
@@ -39,30 +31,13 @@
       "type": "toolchain",
       "version": ">=1.40803.0,<1.40805.0"
     },
-    "framework-arduinosam": {
-      "type": "framework",
-      "optional": true,
-      "version": "~1.10608.0"
-    },
-    "framework-mbed": {
-      "type": "framework",
-      "optional": true,
-      "version": "~3.126.0"
-    },
-    "framework-simba": {
-      "type": "framework",
-      "optional": true,
-      "version": ">=7.0.0"
-    },
-    "tool-avrdude": {
-      "type": "uploader",
-      "optional": true,
-      "version": "~1.60001.0"
-    },
     "tool-bossac": {
       "type": "uploader",
-      "optional": true,
       "version": "~1.10601.0"
+    },
+    "framework-sodaqsamd": {
+      "type": "framework",
+      "version": "~1.6.8"
     },
     "tool-openocd": {
       "type": "uploader",
