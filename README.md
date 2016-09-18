@@ -1,4 +1,5 @@
-# SODAQ SAMD: development platform for [PlatformIO](http://platformio.org)
+# [![Build Status](https://travis-ci.org/joscha/platform-sodaqsamd.svg?branch=platformio)](https://travis-ci.org/joscha/platform-sodaqsamd) SODAQ SAMD: development platform for [PlatformIO](http://platformio.org)
+
 
 # Usage
 
