@@ -8,3 +8,7 @@
 # install development version
 > platformio platform install https://github.com/joscha/platform-sodaqsamd.git
 ```
+
+## Framework dependencies
+
+This has a dependency on [joscha/framework-sodaqsamd](https://github.com/joscha/framework-sodaqsamd)
