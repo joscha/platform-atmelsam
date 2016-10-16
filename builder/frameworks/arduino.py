@@ -17,7 +17,6 @@ env = DefaultEnvironment()
 platform = env.PioPlatform()
 
 FRAMEWORK_DIR = platform.get_package_dir("framework-sodaqsamd")
-FRAMEWORK_VERSION = platform.get_package_version("framework-sodaqsamd")
 assert isdir(FRAMEWORK_DIR)
 
 ARDUINO_VERSION = int(
@@ -26,7 +25,7 @@ CMSIS_DIRNAME = "CMSIS%s" % (
     "_ORG" if env.BoardConfig().get("build.core", "").endswith("_org") else "")
 
 # USB flags
-ARDUINO_USBDEFINES = ["ARDUINO=%s" % FRAMEWORK_VERSION.split(".")[1]]
+ARDUINO_USBDEFINES = ["ARDUINO=%s" % ARDUINO_VERSION]
 if "build.usb_product" in env.BoardConfig():
     ARDUINO_USBDEFINES += [
         "USB_VID=%s" % env.BoardConfig().get("build.hwids")[0][0],
