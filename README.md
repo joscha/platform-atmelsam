@@ -1,4 +1,5 @@
-# SODAQ SAMD: development platform for [PlatformIO](http://platformio.org)
+# [![Build Status](https://travis-ci.org/joscha/platform-sodaqsamd.svg?branch=platformio)](https://travis-ci.org/joscha/platform-sodaqsamd) SODAQ SAMD: development platform for [PlatformIO](http://platformio.org)
+
 
 # Usage
 
@@ -8,3 +9,7 @@
 # install development version
 > platformio platform install https://github.com/joscha/platform-sodaqsamd.git
 ```
+
+## Framework dependencies
+
+This has a dependency on [joscha/framework-sodaqsamd](https://github.com/joscha/framework-sodaqsamd)
