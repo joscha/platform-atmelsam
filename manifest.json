@@ -1,9 +1,9 @@
 {
     "framework-sodaqsamd": [
         {
-            "url": "https://github.com/joscha/framework-sodaqsamd/archive/v1.6.8-platformio.zip",
-            "sha1": "97ee7c85591b76c6ef928122de33d5b0725c33e0",
-            "version": "1.6.8"
+            "url": "https://github.com/joscha/framework-sodaqsamd/archive/v1.6.12-platformio.zip",
+            "sha1": "7a7013f60e274256991b3ba23460a16959f52a76",
+            "version": "1.6.12"
         }
     ]
 }

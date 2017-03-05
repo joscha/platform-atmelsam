@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/joscha/platform-sodaqsamd.git"
   },
-  "version": "1.6.8",
+  "version": "1.6.12",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "https://sourceforge.net/projects/platformio-storage/files/packages/manifest.json/download",
@@ -37,7 +37,7 @@
     },
     "framework-sodaqsamd": {
       "type": "framework",
-      "version": "~1.6.8"
+      "version": "~1.6.12"
     },
     "tool-openocd": {
       "type": "uploader",
